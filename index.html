@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css">
+    <title>Amelia Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+</head>
+<body>
+    <nav>
+        <div class="nav-container">
+            <div class="logo" data-aos="zoom-in" data-aos-duration="1000">
+                <span>Amelia</span>
+            </div>
+            <div class="links">
+                <div class="link" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100"><a href="index.html">Home</a></div>
+                <div class="link" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200"><a href="about.html">About</a></div>
+                <div class="link" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300"><a href="skills.html">Skills</a></div>
+                <div class="link" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400"><a href="services.html">Services</a></div>
+                <div class="link" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="500"><a href="blogs.html">Blogs</a></div>
+                <div class="link contact-btn" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="600"><a href="contact.html">Contact Us</a></div>
+            </div>
+            <i class="fa-solid fa-bars hamburg" onclick="hamburg()"></i>
+        </div>
+        <div class="dropdown">
+            <div class="links">
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="skills.html">Skills</a>
+                <a href="services.html">Services</a>
+                <a href="blogs.html">Blogs</a>
+                <a href="contact.html">Contact Us</a>
+                <i class="fa-solid fa-xmark cancel" onclick="cancel()"></i>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content Section - This will change based on the page -->
+    <main id="main-content">
+        <!-- Home Page (index.html) -->
+        <section id="home" class="page-content active">
+            <div class="main-container">
+                <div class="image" data-aos="zoom-in-right" data-aos-duration="2500">
+                    <img src="www.jpg" alt="Amelia's Profile">
+                </div>
+                <div class="content">
+                    <h1 data-aos="fade-left" data-aos-duration="1000" data-aos-delay="800">Hey I'm <span>Amelia</span></h1>
+                    <div class="typewriter" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="900">I'm a <span>Web Developer</span></div>
+                    <p data-aos="flip-up" data-aos-duration="1000" data-aos-delay="1000">Welcome to my professional portfolio. I specialize in creating beautiful, functional websites that deliver results. With a passion for design and a commitment to excellence, I bring ideas to life.</p>
+                    <div class="social-links" data-aos="flip-down" data-aos-duration="1000" data-aos-delay="1200">
+                        <a href="#"><i class="fa-brands fa-github"></i></a>
+                        <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+                    </div>
+                    <div class="btn" data-aos="zoom-out-left" data-aos-duration="1000" data-aos-delay="1300">
+                        <button>Download CV</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Page (about.html) -->
+        <section id="about" class="page-content active">
+            <div class="about-container">
+                <h1 data-aos="fade-down">About <span>Me</span></h1>
+                <div class="about-content">
+                    <div class="about-image" data-aos="fade-right">
+                        <img src="www.jpg" alt="Amelia">
+                    </div>
+                    <div class="about-text" data-aos="fade-left">
+                        <h2>Professional Web Developer</h2>
+                        <p>I'm Amelia, a passionate web developer with 5 years of experience creating modern, responsive websites and web applications. My journey in tech began when I was studying Computer Science at University.</p>
+                        <p>I specialize in front-end development but also have substantial experience with back-end technologies. My approach combines technical expertise with creative problem-solving to deliver exceptional digital experiences.</p>
+                        <div class="about-details">
+                            <div>
+                                <p><span>Name:</span> Amelia Johnson</p>
+                                <p><span>Degree:</span> Master in Computer Science</p>
+                                <p><span>Experience:</span> 5+ Years</p>
+                            </div>
+                            <div>
+                                <p><span>Phone:</span> +1 234 567 890</p>
+                                <p><span>Email:</span> amelia@example.com</p>
+                                <p><span>Location:</span> San Francisco, USA</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Page (skills.html) -->
+        <section id="skills" class="page-content">
+            <div class="skills-container">
+                <h1 data-aos="fade-down">My <span>Skills</span></h1>
+                <div class="skills-content">
+                    <div class="skills-technical" data-aos="fade-right">
+                        <h2>Technical Skills</h2>
+                        <div class="skill-item">
+                            <p>HTML/CSS</p>
+                            <div class="skill-bar"><div class="skill-level" style="width: 95%"></div></div>
+                        </div>
+                        <div class="skill-item">
+                            <p>JavaScript</p>
+                            <div class="skill-bar"><div class="skill-level" style="width: 90%"></div></div>
+                        </div>
+                        <div class="skill-item">
+                            <p>React</p>
+                            <div class="skill-bar"><div class="skill-level" style="width: 85%"></div></div>
+                        </div>
+                        <div class="skill-item">
+                            <p>Node.js</p>
+                            <div class="skill-bar"><div class="skill-level" style="width: 80%"></div></div>
+                        </div>
+                        <div class="skill-item">
+                            <p>UI/UX Design</p>
+                            <div class="skill-bar"><div class="skill-level" style="width: 75%"></div></div>
+                        </div>
+                    </div>
+                    <div class="skills-professional" data-aos="fade-left">
+                        <h2>Professional Skills</h2>
+                        <div class="skill-item">
+                            <p>Communication</p>
+                            <div class="skill-bar"><div class="skill-level" style="width: 90%"></div></div>
+                        </div>
+                        <div class="skill-item">
+                            <p>Teamwork</p>
+                            <div class="skill-bar"><div class="skill-level" style="width: 85%"></div></div>
+                        </div>
+                        <div class="skill-item">
+                            <p>Project Management</p>
+                            <div class="skill-bar"><div class="skill-level" style="width: 80%"></div></div>
+                        </div>
+                        <div class="skill-item">
+                            <p>Creativity</p>
+                            <div class="skill-bar"><div class="skill-level" style="width: 95%"></div></div>
+                        </div>
+                        <div class="skill-item">
+                            <p>Problem Solving</p>
+                            <div class="skill-bar"><div class="skill-level" style="width: 90%"></div></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Services Page (services.html) -->
+        <section id="services" class="page-content">
+            <div class="services-container">
+                <h1 data-aos="fade-down">My <span>Services</span></h1>
+                <div class="services-content">
+                    <div class="service-card" data-aos="fade-up" data-aos-delay="100">
+                        <i class="fa-solid fa-code"></i>
+                        <h2>Web Development</h2>
+                        <p>Custom website development tailored to your business needs using the latest technologies and frameworks.</p>
+                    </div>
+                    <div class="service-card" data-aos="fade-up" data-aos-delay="200">
+                        <i class="fa-solid fa-paintbrush"></i>
+                        <h2>Web Design</h2>
+                        <p>Beautiful, responsive designs that work perfectly on all devices and create memorable user experiences.</p>
+                    </div>
+                    <div class="service-card" data-aos="fade-up" data-aos-delay="300">
+                        <i class="fa-solid fa-mobile-screen"></i>
+                        <h2>Mobile Apps</h2>
+                        <p>Cross-platform mobile application development that reaches your audience wherever they are.</p>
+                    </div>
+                    <div class="service-card" data-aos="fade-up" data-aos-delay="400">
+                        <i class="fa-solid fa-chart-line"></i>
+                        <h2>SEO Optimization</h2>
+                        <p>Improve your website's visibility and ranking on search engines to attract more organic traffic.</p>
+                    </div>
+                    <div class="service-card" data-aos="fade-up" data-aos-delay="500">
+                        <i class="fa-solid fa-database"></i>
+                        <h2>Database Design</h2>
+                        <p>Efficient database architecture and implementation for optimal performance and scalability.</p>
+                    </div>
+                    <div class="service-card" data-aos="fade-up" data-aos-delay="600">
+                        <i class="fa-solid fa-headset"></i>
+                        <h2>Support</h2>
+                        <p>Ongoing maintenance and support services to keep your digital products running smoothly.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Blogs Page (blogs.html) -->
+        <section id="blogs" class="page-content">
+            <div class="blogs-container">
+                <h1 data-aos="fade-down">My <span>Blogs</span></h1>
+                <div class="blogs-content">
+                    <div class="blog-card" data-aos="fade-up" data-aos-delay="100">
+                        <div class="blog-image">
+                            <img src="https://via.placeholder.com/400x250" alt="Blog Post 1">
+                        </div>
+                        <div class="blog-info">
+                            <span><i class="fa-solid fa-calendar-days"></i> June 15, 2023</span>
+                            <span><i class="fa-solid fa-user"></i> Amelia</span>
+                        </div>
+                        <h2>The Future of Web Development</h2>
+                        <p>Exploring emerging trends and technologies that will shape the future of web development in the coming years.</p>
+                        <a href="#" class="read-more">Read More <i class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+                    <div class="blog-card" data-aos="fade-up" data-aos-delay="200">
+                        <div class="blog-image">
+                            <img src="https://via.placeholder.com/400x250" alt="Blog Post 2">
+                        </div>
+                        <div class="blog-info">
+                            <span><i class="fa-solid fa-calendar-days"></i> May 28, 2023</span>
+                            <span><i class="fa-solid fa-user"></i> Amelia</span>
+                        </div>
+                        <h2>Responsive Design Best Practices</h2>
+                        <p>Essential techniques and strategies for creating websites that work beautifully on any device.</p>
+                        <a href="#" class="read-more">Read More <i class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+                    <div class="blog-card" data-aos="fade-up" data-aos-delay="300">
+                        <div class="blog-image">
+                            <img src="https://via.placeholder.com/400x250" alt="Blog Post 3">
+                        </div>
+                        <div class="blog-info">
+                            <span><i class="fa-solid fa-calendar-days"></i> April 10, 2023</span>
+                            <span><i class="fa-solid fa-user"></i> Amelia</span>
+                        </div>
+                        <h2>JavaScript Performance Optimization</h2>
+                        <p>Proven methods to improve your JavaScript code performance and deliver faster user experiences.</p>
+                        <a href="#" class="read-more">Read More <i class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Page (contact.html) -->
+        <section id="contact" class="page-content">
+            <div class="contact-container">
+                <h1 data-aos="fade-down">Contact <span>Me</span></h1>
+                <div class="contact-content">
+                    <div class="contact-info" data-aos="fade-right">
+                        <h2>Get In Touch</h2>
+                        <p>Feel free to reach out for collaborations or just a friendly hello. I'll get back to you as soon as possible.</p>
+                        <div class="info-item">
+                            <i class="fa-solid fa-envelope"></i>
+                            <div>
+                                <h3>Email</h3>
+                                <p>amelia@example.com</p>
+                            </div>
+                        </div>
+                        <div class="info-item">
+                            <i class="fa-solid fa-phone"></i>
+                            <div>
+                                <h3>Phone</h3>
+                                <p>+1 234 567 890</p>
+                            </div>
+                        </div>
+                        <div class="info-item">
+                            <i class="fa-solid fa-location-dot"></i>
+                            <div>
+                                <h3>Location</h3>
+                                <p>San Francisco, California, USA</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="contact-form" data-aos="fade-left">
+                        <h2>Message Me</h2>
+                        <form>
+                            <div class="form-group">
+                                <input type="text" placeholder="Name" required>
+                            </div>
+                            <div class="form-group">
+                                <input type="email" placeholder="Email" required>
+                            </div>
+                            <div class="form-group">
+                                <input type="text" placeholder="Subject">
+                            </div>
+                            <div class="form-group">
+                                <textarea placeholder="Your Message" rows="5" required></textarea>
+                            </div>
+                            <button type="submit">Send Message</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init({offset:0});
+        
+        function hamburg(){
+            const navbar = document.querySelector(".dropdown")
+            navbar.style.transform = "translateY(0px)"
+        }
+        
+        function cancel(){
+            const navbar = document.querySelector(".dropdown")
+            navbar.style.transform = "translateY(-500px)"
+        }
+
+        // Simple page routing - in a real app you'd use a proper router
+        document.addEventListener('DOMContentLoaded', function() {
+            // Get current page from URL
+            const path = window.location.pathname.split('/').pop() || 'index.html';
+            const pageId = path.replace('.html', '') || 'home';
+            
+            // Hide all pages and show current one
+            document.querySelectorAll('.page-content').forEach(page => {
+                page.classList.remove('active');
+            });
+            
+            const currentPage = document.getElementById(pageId);
+            if (currentPage) {
+                currentPage.classList.add('active');
+            } else {
+                document.getElementById('home').classList.add('active');
+            }
+        });
+    </script>
+</body>
+</html>
